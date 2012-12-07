@@ -16,7 +16,7 @@
     <cfreturn yaml.dump(arguments.object) />
   </cffunction>
 
-  <cffunction name="loadYaml" access="public" output="false" returntype="string">
+  <cffunction name="loadYaml" access="public" output="false" returntype="any">
     <cfargument name="string" type="string" required="true" />
     <cfset var yaml = $createYamlObject() />
     <cfreturn yaml.load(arguments.string) />
